@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'roboto', 'sans-serif';
+    overflow-x: hidden;
+}
+
+/* ============ HEADER ================== */
+
+#logo{
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 4px 4px #000;
+}
+#header{
+    background-color: #000;
+    /* box-shadow: 0px 3px 10px black; */
+}
+.carousel-indicators{
+    justify-content: center;
+}
+/* ============  FIM HEADER ================== */
+
+@keyframes animacaixa {
+    0% {top: 50px;}
+    100% {top: 100px;}
+}
+.caixa-content{
+    z-index: 999;
+    position: fixed;
+    top: 100px;
+    /* border: 5px solid white; */
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    animation-name: animacaixa;
+    animation-duration: 1s;
+    background-color: #363636;
+    color: white;
+    box-shadow: 0px 3px 10px black;
+}
+.form-floating input{
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+.form-floating label{
+    font-size: 15px !important;
+}
+.form-floating input:focus{
+    color: white;
+    background-color: #363636;
+    font-size: 20px;
+}
+.caixa-content:target{
+    display: block;
+   
+}
+.caixa-content form{
+    display: flex;
+    flex-direction: column;
+
+}
+.caixa-content form *{
+    margin: 10px 0px;
+
+}
+.caixa-content form label{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.caixa-content form input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    color: white;
+}
+.caixa-content form input:focus{
+    outline: none;
+}
+.caixa-content form a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.caixa-content form a:hover{
+    color: black;
+}
+.caixa-content button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.caixa-content button:hover{
+    background-color: white;
+    color: red;
+}
+.fechacaixa{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
+
+.hover-tenis:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/* =================== FIM caixa ============== */
+/* =================== CAROUSEL ============== */
+.carousel-caption h1{
+    font-size: 50px;
+    text-shadow:0px 10px 10px black;
+    font-weight: 700;
+}
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 650;
+    text-shadow:0px 10px 10px black;
+}
+
+/* =================== FIM  CAROUSEL ============== */
+
+.container-fluid-sm{ 
+    margin-top: 130px;
+}
+
+
+.black_friday{
+    color: #000;
+    font-weight: 790;
+    font-size: 70px;
+    /* margin-left: 0px; */
+}
+
+.air_sneakers{
+    color: #000;
+    font-weight:790;
+    font-size: 70px;
+    /* margin-left: 0px; */
+    margin-top: -20px;  
+}
+
+.desconto{
+    color: #000;
+    font-weight: 800;
+    margin-left: 25px;
+    
+}
+.desconto spam{
+    color: red;
+}
+
+.gif_tenis{
+    width: 400px;
+    height: 500px;
+    margin-left: 700px;
+    margin-top: -420px;
+    border-color: transparent;
+}
+
+.text-center{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+
+}
+
+/*------------------------ IMAGENS ------------------------ */
+.lebron{
+    width: 80vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.basquete{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.saibamais{
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid black;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 20px;
+    
+}  
+
+.neymar{
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 20px;
+}
+
+.neymar:hover {
+    background-color: black;
+    color: white;
+}
+
+.ney{
+    margin-top: 110px;
+}
+
+.saibamais:hover {
+    background-color: black;
+    color: white;
+}
+
+.lancamentos {
+    position: absolute;
+    right: 0;
+    top:-15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.confira{
+    background-color: red;
+    width: 80vw;    
+}
+
+.conf{
+    display: flex;
+    justify-content: left;
+    width: 80vw;
+    margin-top: -2px;
+}
+
+.botao_do_neymar{
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid #000;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    top: 20px;
+}
+
+.botao_do_neymar:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+.diversos {
+    position: absolute;
+    right: 0;
+    top:-15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+.sai{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin-top: -2px;
+}
+
+.adidas{
+    width: 600px;
+    height: 1000px;
+    margin-left: 100px;
+}
+
+
+.tenis-adidas{
+    width: 600px;
+}
+
+.ad{
+    width: 80vw;
+    background-color: black;
+    columns: 2;
+    border-radius: 5px;
+}
+
+.tenis-casual{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.desc{
+    color: red;
+}
+
+.nome-adidas{
+    color: gray;
+}
+
+.divtenis{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saibamais-adidas{
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px solid black;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.saibamais-adidas:hover {
+    background-color: black;
+    color: white;
+}
+
+.teste{
+    /* background-color: blue; */
+    width: 80vw;
+    margin-top: 15px;
+}
+
+.container-fluid{
+    width: 100vw; 
+    background-color: black;
+    margin: 0px !important;
+}
+
+.col-sm{
+    background-color: #000;
+    height: 200px;
+    width: 100vw;
+    margin: 150px;
+    
+}
+
+
+
+/*------------------------ FIM IMAGENS ------------------------ */
+
+
+
+/*-------------------------------------- MEDIA -------------------------------------- */
+
+@media (max-width: 1190px){
+    .diversos {
+        top: 30px;
+        left: 0;
+        font-size: 19px;       
+    }
+    
+}
+
+@media (max-width: 1215px) {
+    .gif_tenis{
+        width: 400px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .gif {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 930px){
+    .tenis-casual{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 825px) {
+    .lancamentos {
+        top: 30px;
+        left: 0;
+        font-size: 19px;       
+    }
+    .saibamais-adidas{
+        font-size: 15px;
+    }
+    header { 
+        display: flex;
+    }
+
+}
+
+@media (max-width: 830px) {
+    #itens{
+        display: none;
+    }
+
+    #itens{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .saibamais {
+        padding: 5px 30px 5px 30px;
+        font-size: 15px;
+        left: 0px;
+    }
+    .basquete {
+        position: relative;
+        left: 0px;
+    }
+    .gif_tenis {
+        margin-top: -20px;
+        width: 500px;
+        height: 400px;
+        /* margin-left: 20px; */
+        width: 260px;
+        background-color: white;
+        justify-content: center;
+    }
+    .black_friday {
+        font-weight: 700;
+        margin-left: 40px;
+        font-size: 35px;
+    }
+    .air_sneakers {
+        font-weight: 700;
+        font-size: 35px;
+        margin-left: 40px;
+    }
+    .desconto {
+        margin-left: 50px;
+        font-size: 15px;
+        width: 275px;
+    }
+    .botao_do_neymar{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .caixa-content{
+        top: 0px !important;
+        background-color: #363636;
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+    }
+    .tenis-casual{
+        font-size: 15px;
+    }
+
+    .saibamais-adidas {
+        padding: 5px 30px 5px 30px;
+        font-size: 15px;
+    }
+
+    .col-sm{
+        margin-left: 50px !important;
+    }
+    
+    .lancamentos{
+        font-size: 17px;
+    }
+    .diversos{
+        font-size: 17px;
+
+    }
+   
+    #itens > a{
+        display: block;   
+    }
+ 
+}       
+
+

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'roboto', 'sans-serif';
+    overflow-x: hidden;
+}
+
+/* ============ HEADER ================== */
+
+
+/* ============ HEADER ================== */
+
+#logo{
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 4px 4px #000;
+}
+#header{
+    background-color: #000;
+    z-index: 888;
+    /* box-shadow: 0px 3px 10px black; */
+}
+.carousel-indicators{
+    justify-content: center;
+}
+/* ============  FIM HEADER ================== */
+
+/* =================== CAROUSEL ============== */
+.carousel-caption h1{
+    font-size: 50px;
+    text-shadow:0px 10px 10px black;
+    font-weight: 700;
+}
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 650;
+    text-shadow:0px 10px 10px black;
+}
+
+/* =================== FIM  CAROUSEL ============== */
+
+
+
+/* =================== caixa =================== */
+
+@keyframes animacaixa {
+    0% {top: 50px;}
+    100% {top: 100px;}
+}
+@keyframes animacaixa2 {
+    0% {top: 1050px;}
+    100% {top: 1000px;}
+}
+.caixa-content{
+    position: fixed;
+    top: 100px; 
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    animation-name: animacaixa;
+    animation-duration: 1s;
+    background-color: #363636;
+    color: white;
+    box-shadow: 0px 3px 10px black;
+    z-index: 999;
+}
+.form-floating input{
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+.form-floating label{
+    font-size: 15px !important;
+}
+.form-floating input:focus{
+    color: white;
+    background-color: #363636;
+    font-size: 20px;
+}
+.caixa-content:target{
+    display: block;
+   
+}
+.caixa-content form{
+    display: flex;
+    flex-direction: column;
+
+}
+.caixa-content form *{
+    margin: 10px 0px;
+
+}
+.caixa-content form label{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.caixa-content form input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    color: white;
+}
+.caixa-content form input:focus{
+    outline: none;
+}
+.caixa-content form a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.caixa-content form a:hover{
+    color: black;
+}
+.caixa-content button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.caixa-content button:hover{
+    background-color: white;
+    color: red;
+}
+.fechacaixa{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.text-center{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+
+}
+/* =================== FIM caixa ============== */
+
+
+.basquete{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+}
+.frase{
+    margin-top: 250px;
+    background-color: #a0c7f5;
+    color: white;
+    width: 70vw;
+    height: 300px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../img/Imagenspáginatêniscasual/gif-airforce.gif");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 500px;
+}
+.frase h1{
+    width: 650px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.frase h1 span{
+    color: black;
+}
+@media (max-width: 1200px){
+    .frase{
+        height: 500px;
+        background-position: bottom;
+    }
+    .frase h1{
+        margin-top: -300px;
+    }
+}
+.tenis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tenis h1{
+    margin: 50px 0px;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+.lista div{
+    margin: 40px;
+    font-weight: bold;
+}
+.lista div a{
+    text-decoration: none;
+    color: black;
+}
+.lista div img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.lista div p{
+    font-size: 25px;
+}
+.lista div .preco{
+    font-size: 12px;
+}
+.lista div span{
+    color: red;
+    float: right;
+}
+
+/* ========= MODAL TENIS ========== */
+
+.caixa-tenis:target{
+    display: flex;
+}
+.caixa-tenis{
+    position: absolute;
+    top: auto;
+    top: 1000px;
+    /* left: 25vw; */
+    display: none;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    animation-name: animacaixa2;
+    animation-duration: 1s;
+}
+.caixa-tenis h1{
+    margin: 0px;
+}
+/* .caixa-tenis img{
+    width: 200px !important;
+    height: 200px !important;
+    border: solid;
+} */
+.caixa-tenis .direita h2 span{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.caixa-tenis .direita p{
+    font-size: 15px;
+}
+.caixa-tenis .direita label{
+    font-size: 20px;
+}
+.caixa-tenis .tamanho{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0;
+}
+.caixa-tenis .tamanho p{
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+.caixa-tenis .tamanho p:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.caixa-tenis button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.caixa-tenis button:hover{
+    filter: brightness(150%);
+}
+.caixa-tenis .fecha{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    z-index: 999;
+    text-decoration: none;
+    color: white;
+}
+.caixa-tenis .fecha:hover{
+    color: red;
+}
+
+@media (max-width: 630px){
+    .caixa-tenis{
+        left: 0px;
+        width: 100vw;
+        margin: 0px !important;
+    }
+    .caixa-tenis .direita h2{
+        display: flex;
+        flex-direction: column;
+    }
+    .caixa-tenis .tamanho{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px){
+    .caixa-content{
+        top: 0px !important;
+        background-color: #363636;
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+    }
+    .frase{
+        background-size: 80vw;
+    }
+    .basquete{
+        margin-top: 150px;
+    }
+
+}
+
+/* =========== FIM MODAL TENIS ========= */

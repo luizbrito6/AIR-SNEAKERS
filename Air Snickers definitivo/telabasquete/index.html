@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR SNEAKERS - Basquete</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../footer/style-footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    
+   
+</head>
+<body onresize="mudouTamanho()" onload="mudouTamanho()">
+<!--------------------------------------------------------- HEADER --------------------------------------------------------->
+<div class="w-100" id="header">
+       
+    <div class="container py-3" id="header">
+        <a class="navbar-brand text-white" id="logo" href="../página_inicial/index.html">AIR SNEAKERS</a>
+        <button class="btn fs-3 text-white shadow-0 p-0 float-end" data-bs-toggle="collapse" href="#collapseNavbar">
+        <i class="bi bi-list align-self-center d-flex"></i>
+        </button>
+    </div>
+
+    <div class="w-100 float-start">
+        <div class="collapse" id="collapseNavbar">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <ul class="navbar-nav mx-sm-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../página_inicial/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../telafutebol/index.html">Futebol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../telacasual/index.html">Casual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../telabasquete/index.html">Basquete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-dark" href="#link" role="button">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------- FIM HEADER --------------------------------------------------------->
+    <div id="link" class="caixa-content">
+        <form action="">
+            <a href="#" class="fechacaixa">X</a>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Endereço de Email</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+            </div>
+            
+            <button>Entrar</button>
+            <a href="">Esqueci a senha</a>
+            <a href="">Não tenho cadastro</a>
+        </form>
+    </div>
+<!--------------------------- CAROUSEL  --------------------------->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width:100vw">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 32em;">
+      <div class="carousel-item h-100 active" style="background: url(https://kenlu.net/wp-content/uploads/2020/02/Under-Armour-Curry-7-Underrated-Tour-6.jpg) center/cover no-repeat;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1> Stephen Curry x Under Armor</h1>
+          <p>Stephen passou de um recruta de 3 estrelas para 3 vezes campeão do mundo porque ele está concentrado e sabe como controlar a quadra.</p>
+        </div>
+      </div>
+      <div class="carousel-item h-100" style="background: url(https://i.ytimg.com/vi/aUY6JMzL7Yw/maxresdefault.jpg) center/cover no-repeat;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Lebron James x Space Jam 2 </h1>
+          <p>Space Jam: A New Legacy, o Nike LeBron 19 'Tune Squad' o tênis de assinatura de Lebron James</p>
+        </div>
+      </div>
+      <div class="carousel-item h-100" style="background: url(https://hips.hearstapps.com/hmg-prod/images/index-1571427592.jpg) center/cover no-repeat;">
+        
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Nike Air Jordan</h1>
+          <p>A edição especial da chuteira do Batman irá estrear no campo com Neymar Jr., celebrando o lançamento do novo filme</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!--------------------------- FIM CAROUSEL  --------------------------->
+
+    <div class="basquete">
+        <p class="text-center">Basquete</p>
+
+        <div class="frase" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius:5px ;">
+            <h1>NUNCA ERRA A <span>BANDEJA</span> COM OS TENIS DA AIR SNEAKERS</h1>
+        </div>
+    </div>
+    
+    <div class="tenis" style="margin-top: 100px;">
+        <p class="text-center">Tênis de Basquete </p>
+
+        <div class="lista">
+            <div class="hover-tenis">
+                <a href="#link2">
+                    <img style="width: 240px;" src="img/Imagenspáginabasquete/lebron18.png" alt="">
+                    <p>NIKE LEBRON 19</p>
+                    <p class="preco">R$990,90 <span>LEBRON X SPACE JAM</span></p>
+                </a>
+            </div>
+            <div id="link2" class="caixa-tenis">
+                <a href="#" class="fecha">X</a>
+                <div>
+                    <h1>NIKE LEBRON 19</h1>
+                    <img style="width: 240px;" src="img/Imagenspáginabasquete/lebron18.png" alt="">
+                </div>
+                <div class="direita">
+                    <h2>R$990,90 <span>LEBRON X SPACE JAM</span></h2>
+                    <p>ATE 10 X R$100,00 SEM JUROS</p>
+
+                    <label>TAMANHO DISPONIVEIS</label>
+                    <div class="tamanho">
+                        <p>32</p>
+                        <p>33</p>
+                        <p>34</p>
+                        <p>35</p>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p>39</p>
+                        <p>40</p>
+                        <p>41</p>
+                        <p>42</p>
+                        <p>43</p>
+                        <p>44</p>
+                        <p>45</p>
+                        <p>46</p>
+                    </div>
+                    <button>ADICIONE AO CARRINHO</button>
+                </div>
+            </div>
+
+            <div class="hover-tenis">
+                <a href="#link3">
+                    <img src="img/Imagenspáginabasquete/curry7.png" alt="">
+                    <p style="display:flex; flex-wrap: wrap; width: 250px;">STEPHEN CURRRY 7</p>
+                    <p class="preco">R$829,99</p>
+                </a>
+            </div>
+            <div id="link3" class="caixa-tenis">
+                <a href="#" class="fecha">X</a>
+                <div>
+                    <h1>STEPHEN CURRRY 7</h1>
+                    <img src="img/Imagenspáginabasquete/curry7.png" alt="">
+                </div>
+                <div class="direita">
+                    <h2>R$829,99</h2>
+                    <p>ATE 10 X R$100,0 SEM JUROS</p>
+
+                    <label>TAMANHO DISPONIVEIS</label>
+                    <div class="tamanho">
+                        <p>32</p>
+                        <p>33</p>
+                        <p>34</p>
+                        <p>35</p>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p>39</p>
+                        <p>40</p>
+                        <p>41</p>
+                        <p>42</p>
+                        <p>43</p>
+                        <p>44</p>
+                        <p>45</p>
+                        <p>46</p>
+                    </div>
+                    <button>ADICIONE AO CARRINHO</button>
+                </div>
+            </div>
+
+            <div class="hover-tenis">
+                <a href="#link4">
+                    <img src="img/Imagenspáginabasquete/iverson.png" alt="">
+                    <p>AIR JORDAN 6</p>
+                    <p class="preco">R$679,90</p>
+                </a>
+            </div>
+            <div id="link4" class="caixa-tenis">
+                <a href="#" class="fecha">X</a>
+                <div>
+                    <h1>AIR JORDAN 6</h1>
+                    <img src="img/Imagenspáginabasquete/iverson.png" alt="">
+                </div>
+                <div class="direita">
+                    <h2>R$679,90</h2>
+                    <p>ATE 10 X R$100,0 SEM JUROS</p>
+
+                    <label>TAMANHO DISPONIVEIS</label>
+                    <div class="tamanho">
+                        <p>32</p>
+                        <p>33</p>
+                        <p>34</p>
+                        <p>35</p>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p>39</p>
+                        <p>40</p>
+                        <p>41</p>
+                        <p>42</p>
+                        <p>43</p>
+                        <p>44</p>
+                        <p>45</p>
+                        <p>46</p>
+                    </div>
+                    <button>ADICIONE AO CARRINHO</button>
+                </div>
+            </div>
+
+            <div class="hover-tenis">
+                <a href="#link5">
+                    <img src="img/Imagenspáginabasquete/jordan6.png" alt="">
+                    <p>ANSWER  IV </p>
+                    <p class="preco">R$739,99</p>
+                </a>
+            </div>
+            <div id="link5" class="caixa-tenis">
+                <a href="#" class="fecha">X</a>
+                <div>
+                    <h1>ANSWER IV REEBOK</h1>
+                    <img src="img/Imagenspáginabasquete/jordan6.png" alt="">
+                </div>
+                <div class="direita">
+                    <h2>R$739,99</h2>
+                    <p>ATE 10 X R$100,0 SEM JUROS</p>
+
+                    <label>TAMANHO DISPONIVEIS</label>
+                    <div class="tamanho">
+                        <p>32</p>
+                        <p>33</p>
+                        <p>34</p>
+                        <p>35</p>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p>39</p>
+                        <p>40</p>
+                        <p>41</p>
+                        <p>42</p>
+                        <p>43</p>
+                        <p>44</p>
+                        <p>45</p>
+                        <p>46</p>
+                    </div>
+                    <button>ADICIONE AO CARRINHO</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+    <div class="container" style="margin-top: 250px; ">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>PRODUTOS</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Chuteiras</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tênis de basquete </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tênis causais</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>SUPORTE</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre nós</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Atendimento ao cliente</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dúvidas frequentes</a></li>
+              </ul>
+            </div>
+      
+          
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Notificações por e-mail</h5>
+                <p>Receba nossas novidades, dicas e ofertas em primeira mão.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button" >Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 AIR SNEAKERS, Inc.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script>
+    var itens = document.querySelector('.itens')
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }   
+    }
+
+    function mudouTamanho() {
+        if (window.innerWidth <= 860) {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+
+</script>
+
+</body>
+</html>
